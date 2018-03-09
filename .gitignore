@@ -1,7 +1,6 @@
 .DS_Store
 */.DS_Store
 node_modules/
-*/package-lock.json
 dist/
 xlsx-demo/*.xlsx
 .idea/
