@@ -1,0 +1,14 @@
+{
+  "name": "xlsx-demo",
+  "version": "1.0.0",
+  "description": "node-xlsx汇总excel表的数据",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arror",
+  "license": "ISC",
+  "dependencies": {
+    "node-xlsx": "^0.11.2"
+  }
+}
