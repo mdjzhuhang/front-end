@@ -1,0 +1,14 @@
+<div>
+  <h2>Photos</h2>
+  <ul class="photos">
+    <li *ngFor="let photo of photos">
+      <span class="badge">{{photo.id}}</span> {{photo.name}}
+    </li>
+  </ul>
+  <h2>{{address.name}} Details</h2>
+  <div><span>id: </span>{{address.id}}</div>
+  <div><span>name: </span>{{address.name}}</div>
+  <label>photo at:
+    <input [(ngModel)]="address.name" placeholder="name">
+  </label>
+</div>

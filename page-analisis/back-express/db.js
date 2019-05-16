@@ -2,7 +2,7 @@ var mysql = require("mysql");
 var pool = mysql.createPool({
     host:"localhost",
     user:"root",
-    password:"090546",
+    password:"000000", // 要填数据库密码
     database:"analise_data"
 });
 

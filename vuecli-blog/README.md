@@ -1,6 +1,6 @@
 # webpack-vuecli
 
-> A Vue.js project
+> vue-webpack demo
 
 ## Build Setup
 
