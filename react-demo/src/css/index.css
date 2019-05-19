@@ -1,0 +1,19 @@
+@import url(reset.css);
+@import url(form.css);
+
+h1, h2, h3 {
+	padding: 8px 14px;
+}
+
+.section {
+	padding: 0 16px;
+}
+
+li {
+	height: 30px;
+}
+
+p {
+  font-size: 14px;
+  text-indent: 14px
+}
