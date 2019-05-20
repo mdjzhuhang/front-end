@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Photo } from '../photo';
-import { PHOTOS } from '../mock-photos';
+import { PHOTOS } from './mock-photos';
 // 指定 Angular 所需的元数据。
 @Component({
   selector: 'app-photos',
@@ -11,15 +10,18 @@ import { PHOTOS } from '../mock-photos';
 export class PhotosComponent implements OnInit {
   photos = PHOTOS;
   
-  address = {
-    id: 1,
-    name: 'Sichuan'
-  };
+  imgSrc = '';
+
   constructor() {
 
   }
 
+  onClick(event, url) {
+    this.imgSrc = url;
+  }
+
   ngOnInit() {
+
   }
 
 }
