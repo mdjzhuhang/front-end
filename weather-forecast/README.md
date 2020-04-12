@@ -6,7 +6,7 @@ https://openweathermap.org/api.
 
 The docs include all of the information you should need to get API keys and access the appropriate API endpoints to access the data you need.
 
-Vue + Element UI
+Frameworks: Vue + Element UI
 
 ## Project setup
 ```

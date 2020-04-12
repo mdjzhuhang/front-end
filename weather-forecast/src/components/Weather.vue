@@ -83,30 +83,33 @@ export default {
     getLocation() {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
+          debugger
           this.lat = position.coords.latitude.toFixed(4);
           this.lon = position.coords.longitude.toFixed(4);
           this.getCurrentWeather();
         }, this.showError);
       } else {
-        console.log("该浏览器不支持定位功能！");
+        alert("该浏览器不支持定位功能");
       }
     },
 
     showError(error) {
+      var msg;
       switch (error.code) {
         case error.PERMISSION_DENIED:
-          x.innerHTML = "用户拒绝对获取地理位置的请求。";
+          msg = "用户拒绝对获取地理位置的请求。";
           break;
         case error.POSITION_UNAVAILABLE:
-          x.innerHTML = "位置信息是不可用的。";
+          msg = "位置信息是不可用的。";
           break;
         case error.TIMEOUT:
-          x.innerHTML = "请求用户地理位置超时。";
+          msg = "请求用户地理位置超时。";
           break;
         case error.UNKNOWN_ERROR:
-          x.innerHTML = "未知错误。";
+          msg = "未知错误。";
           break;
       }
+      alert(msg);
     },
 
     getCurrentWeather() {
